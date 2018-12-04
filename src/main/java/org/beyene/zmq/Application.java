@@ -23,6 +23,7 @@ public class Application {
             Socket socket = context.createSocket(ZMQ.STREAM);
             socket.bind("tcp://*:8080");
 
+            System.out.println("Server is listening on http://localhost:8080");
             while (!Thread.currentThread().isInterrupted()) {
                 ZMsg msg = ZMsg.recvMsg(socket);
 

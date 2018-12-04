@@ -1,8 +1,11 @@
 apply plugin: 'java'
+apply plugin: 'application'
 apply plugin: 'eclipse'
 
 group 'org.beyene.zmq'
 version '1.0-SNAPSHOT'
+
+mainClassName = 'org.beyene.zmq.Application'
 
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
